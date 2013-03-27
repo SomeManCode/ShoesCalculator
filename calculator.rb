@@ -3,6 +3,9 @@ Shoes.app :title => "My Amazing Calculator", :width => 240, :height => 240 do
     @output = edit_line
     
 
+    background yellow
+
+    
     #making buttons
     flow do
       %w(7 8 9 + / 5 6 7 * - 1 2 3 0 C = ** sq).each do |op|
@@ -14,8 +17,6 @@ Shoes.app :title => "My Amazing Calculator", :width => 240, :height => 240 do
             when "="
               eval_expression
             when "sq"
-               square_root
-
                # @input = (Math.sqrt(@input)
                # @output.text = @input
             else
